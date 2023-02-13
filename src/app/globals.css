@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind Custom CSS */
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1112px] px-4 font-inter text-gray-700;
+  }
+
+  .gradient {
+    background: linear-gradient(
+      89.81deg,
+      #9845e8 -1.72%,
+      #33d2ff 54.05%,
+      #dd5789 99.78%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-size: 150% 150%;
+    animation: gradient 15s ease infinite;
+    line-height: 1.2;
+  }
+
+  .heading {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-outfit;
+  }
+  h1 {
+    @apply heading gradient text-6xl sm:text-8xl;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  p,
+  li,
+  a {
+    @apply font-inter text-gray-800;
+  } */
+}
